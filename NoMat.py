@@ -41,7 +41,7 @@ def statis_message(message):
             statis_string =  statis_string + '@' + str(key) + ' 👉👉👉 ' + str(value) +'🤬\n'
     bot.send_message(message.chat.id, statis_string)
 
-@bot.message_handler(commands=['time'])
+@bot.message_handler(commands=['time'])    #функция определения времени
 def time_message(message):
     bot.send_message(message.chat.id, str(datetime.now()))
 
