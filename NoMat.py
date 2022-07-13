@@ -32,8 +32,7 @@ def hello_message(message):
 def info_message(message):
     bot.send_message(message.chat.id, '/hello - информация о боте\n/statis - статистика по матам\n/time - дата и время\n/start - начать работу по удалению мата\n/stop - завершить работу по удалению мата')
 
-
-@bot.message_handler(commands=['statis'])   #Функция, которая ведет статистику запрещенных слов
+@bot.message_handler(commands=['statis'])
 def statis_message(message):
     global dictr_users
     statis_string = ''
